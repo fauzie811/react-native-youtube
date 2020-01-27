@@ -12,11 +12,8 @@ import ReactNative, {
   requireNativeComponent,
   UIManager,
   NativeModules,
-  BackAndroid,
-  BackHandler as BackHandlerModule,
+  BackHandler
 } from 'react-native';
-
-const BackHandler = BackHandlerModule || BackAndroid;
 
 const RCTYouTube = requireNativeComponent('ReactYouTube', YouTube, {
   nativeOnly: {
